@@ -16,7 +16,8 @@
     <div class="card">
         <div class="card-img" style="background-image: url('@product.Image');"></div>
         <div class="card-body">
-                <h5 class="card-title">@product.Title</h5>
+               @* <h5 class="card-title">@product.Title</h5>*@
+            <a class="card-title" asp-area="" asp-page="/Item">@product.Title</a>
         </div>
     </div>
     }
