@@ -8,17 +8,27 @@
     <h1 class="display-4">Grey and the Gang</h1>
 </div>
 
+
+<div class="container h-100 d-flex justify-content-center">
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit" class="btn btn-primary btn-sm">Search</button>
+    </form>
+</div>
+
+
 <img src="~/img/Home.jpg" />
+
 
 <div class="card-columns">
     @foreach (var product in Model.Products)
-    {   
-    <div class="card">
-        <div class="card-img" style="background-image: url('@product.Image');"></div>
-        <div class="card-body">
-               @* <h5 class="card-title">@product.Title</h5>*@
-            <a class="card-title" asp-area="" asp-page="/Item">@product.Title</a>
+    {
+        <div class="card">
+            <div class="card-img" style="background-image: url('@product.Image');"></div>
+            <div class="card-body">
+                @* <h5 class="card-title">@product.Title</h5>*@
+                <a class="card-title" asp-area="" asp-page="/Item">@product.Title</a>
+            </div>
         </div>
-    </div>
     }
 </div>
