@@ -4,34 +4,48 @@
     ViewData["Title"] = "Posting";
 }
 
-<h1>Create a new posting</h1>
-<div class="container">
-    <form class="form-inline my-2 my-lg-0">
-        <input class="mr-sm-2" type="text" placeholder="Title" aria-label="Title">
-            <select class="form-control-sm">
-                <option value="one">Total</option>
-                <option value="two">Two</option>
-                <option value="three">Three</option>
-                <option value="four">Four</option>
-                <option value="five">Five</option>
-            </select>
-    </form>
-</div>
+
 <br />
-<div class="container">
-    <textarea class="form-control" rows="5" id="description"></textarea>
-</div>
-<br />
-<div class="container">
-    <form class="form-inline my-2 my-lg-0">
-        <div class="col">
-            <button type="submit" class="btn btn-primary">Add pictures</button>
+<div class="card w-50">
+    <div class="card-body">
+        <h3>&ensp;Create a new posting</h3><br />
+        <div class="container">
+            <form class="form-inline my-2 my-lg-0">
+                <input class="mr-sm-2" type="text" placeholder=" Title" aria-label="Title">
+                <select class="form-control-sm">
+                    <option value="one">Total</option>
+                    <option value="two">Two</option>
+                    <option value="three">Three</option>
+                    <option value="four">Four</option>
+                    <option value="five">Five</option>
+                </select>
+            </form>
         </div>
-        <div class="col-6>"</div>
-        <div class="col">
-            <button type="submit" class="btn btn-primary" asp-area="" asp-page="/Index">Post</button>
+        <br />
+        <div class="container">
+            <textarea class="form-control" rows="7" id="description"></textarea>
         </div>
-</form>
+        <br />
+        <div class="container">
+            <form class="form-inline my-2 my-lg-0">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Add pictures</button>
+                </div>
+                <div class="col-6>"</div>
+                <div class="col">
+                    <button type="submit" class="btn btn-primary" asp-area="" asp-page="/Index">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
+
+
+    
+
+
+
+
+
 
 @*<img src="~/img/Posting.png" />*@
