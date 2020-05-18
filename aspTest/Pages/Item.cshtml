@@ -4,19 +4,43 @@
     ViewData["Title"] = "Item";
 }
 
-<h1>Item</h1>
-
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/Index">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Current Item</li>
     </ol>
 </nav>
+<div class="row">
+    <img class="img-fluid" src="~/img/MainLamp.png" alt="Lamp" />
+    <div class="col"> 
+        <h1><b>Item</b></h1>
+        <h6>05/10/20</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas efficitur tellus ac imperdiet. Donec nibh elit, dapibus a posuere nec, 
+        efficitur vel erat. Pellentesque molestie ut elit sit amet pellentesque. Suspendisse in nisi quis libero imperdiet sodales. Lorem ipsum dolor sit amet, 
+        consectetur adipiscing elit. Maecenas est justo, auctor sed lectus nec, ullamcorper tempus libero. Nullam condimentum tortor vel vestibulum sagittis. Nunc ut semper tortor. 
+        Aenean condimentum dapibus eros non consectetur. Ut a eros hendrerit leo efficitur ultricies. Duis viverra maximus quam efficitur fringilla.</p>
+        <form>
+            <button type="submit" class="btn btn-primary" asp-area="" asp-page="/PosterContacted">Contact</button>
+        </form>
+    </div>
+</div>  
+<div class="row text-center text-lg-left">
+    <div class="col-lg-2 col-md-4 col-6">
+        <a href="~/img/AltLamp1.png" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="~/img/AltLamp1.png" alt="AltLamp1">
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4 col-6">
+        <a href="~/img/AltLamp2.png" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="~/img/AltLamp2.png" alt="AltLamp2">
+        </a>
+    </div>
+    <div class="col-lg-2 col-md-4 col-6">
+        <a href="~/img/AltLamp3.png" class="d-block mb-4 h-100">
+            <img class="img-fluid img-thumbnail" src="~/img/AltLamp3.png" alt="AltLamp3">
+        </a>
+    </div>
+</div>
 
-<img src="~/img/ItemPagePicture.jpg" />
-<img src="~/img/ItemPageDescription.jpg" />
-
-
-<form class="form-inline my-2 my-lg-0">
-    <button type="submit" class="btn btn-primary" asp-area="" asp-page="/PosterContacted">Contact</button>
-</form>
+@*<img src="~/img/ItemPagePicture.jpg" />
+<img src="~/img/ItemPageDescription.jpg" />*@
