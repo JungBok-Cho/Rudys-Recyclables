@@ -16,11 +16,10 @@
         <script>
             function myFunc() {
                 let val = searchtxt.value;
-                if (val === "") {
-                    //alert(val)
-                    window.location.href = 'ItemNotFound';
-                } else {
+                if (val === "lamp") {
                     window.location.href = 'AfterSearch';
+                } else {
+                    window.location.href = 'ItemNotFound';
                 }
             }
         </script>
