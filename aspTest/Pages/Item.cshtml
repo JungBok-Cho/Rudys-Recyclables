@@ -12,8 +12,13 @@
 </nav>
 <div class="row">
     <img class="img-fluid" src="~/img/MainLamp.png" alt="Lamp" />
-    <h1>Item</h1>
-</div>
+    <div class="col"> 
+        <h1>Item</h1>
+        <form>
+            <button type="submit" class="btn btn-primary" asp-area="" asp-page="/PosterContacted">Contact</button>
+        </form>
+    </div>
+</div>  
 <div class="row text-center text-lg-left">
     <div class="col-lg-2 col-md-4 col-6">
         <a href="~/img/AltLamp1.png" class="d-block mb-4 h-100">
@@ -34,8 +39,3 @@
 
 <img src="~/img/ItemPagePicture.jpg" />
 <img src="~/img/ItemPageDescription.jpg" />
-
-
-<form class="form-inline my-2 my-lg-0">
-    <button type="submit" class="btn btn-primary" asp-area="" asp-page="/PosterContacted">Contact</button>
-</form>
