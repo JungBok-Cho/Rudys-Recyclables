@@ -11,8 +11,18 @@
 
 <div class="container h-100 d-flex justify-content-center">
     <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button type="submit" class="btn btn-primary" asp-area="" asp-page="/AfterSearch">Search</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchtxt">
+        <button type="reset" class="btn btn-primary" onclick="myFunc()" asp-area="">Search</button>
+        <script>
+            function myFunc() {
+                let val = searchtxt.value;
+                if (val === "lamp") {
+                    window.location.href = 'AfterSearch';
+                } else {
+                    window.location.href = 'ItemNotFound';
+                }
+            }
+        </script>
     </form>
     &emsp;
     <form class="form-inline my-2 my-lg-0">
