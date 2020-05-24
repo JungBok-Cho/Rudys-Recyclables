@@ -23,7 +23,7 @@
   {
     "Id": "jenlooper-lightshow",
     "Maker": "@jenlooper",
-    "img": "https://user-images.githubusercontent.com/41929050/61567053-13938600-aa33-11e9-9780-104fe4019659.png",
+    "img": "img/Organizer.jpg",
     "Url": "https://www.hackster.io/agent-hawking-1/bling-your-laptop-with-an-internet-connected-light-show-30e4db",
     "Title": "Bling your Laptop with an Internet-Connected Light Show",
     "Description": "Create a web-connected light-strip API controllable from your website, using the Particle.io.",
