@@ -32,7 +32,14 @@
                         <a class="dropdown-item" asp-area="" asp-page="/ViewMyItems">View My Items</a>
                         <a class="dropdown-item" asp-area="" asp-page="/Wishlist">Wish List</a>
                         <a class="dropdown-item" asp-area="" asp-page="/AdminHome">Admin Page</a>
-                        <a class="dropdown-item" href="https://www.seattleu.edu/">Logout</a>
+                        <a class="dropdown-item" href="#" id='logout' onclick="contacted()">Logout</a>
+                        <script>
+                            function contacted() {
+                                var dropdownItem = document.getElementById("logout");
+                                window.alert("You successfully logged out!");
+                                window.location.replace("https://www.seattleu.edu/");
+                            }
+                        </script>
                     </div>
                 </div>
                 <!--/Dropdown primary-->
