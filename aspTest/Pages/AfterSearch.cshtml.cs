@@ -7,8 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace RudysRecyclables.Pages
 {
+    /// <summary>
+    /// The After Search Page
+    /// </summary>
     public class AfterSearchModel : PageModel
     {
+        /// <summary>
+        /// Get for the After Search Page
+        /// </summary>
         public void OnGet()
         {
 
