@@ -1,4 +1,18 @@
-﻿var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+﻿var imageOne = document.getElementById("graphOne");
+
+function changeGraphOne()
+{
+    if (imageOne.getAttribute('src') == "/img/PrimaryGraphOne.png")
+    {
+        imageOne.src = "/img/SecondaryGraphOne.png";
+    }
+    else
+    {
+        imageOne.src = "/img/PrimaryGraphOne.png";
+    }
+}
+
+var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
 
 $('#startDate').datepicker({
     uiLibrary: 'bootstrap4',
