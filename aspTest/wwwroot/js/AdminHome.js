@@ -3,7 +3,7 @@ $('#startDate').datepicker({
     uiLibrary: 'bootstrap4',
     iconsLibrary: 'fontawesome',
     dateFormat: 'mm-dd-yyyy',
-    minDate: "@DateTime.Today.AddDays(-14).ToShortDateString()",
+    minDate: "05-01-2020",
     maxDate: today,
 });
 $('#endDate').datepicker({
@@ -18,7 +18,7 @@ $('#startDateTwo').datepicker({
     uiLibrary: 'bootstrap4',
     iconsLibrary: 'fontawesome',
     dateFormat: 'mm-dd-yyyy',
-    minDate: "@DateTime.Today.AddDays(-14).ToShortDateString()",
+    minDate: "05-01-2020",
     maxDate: today,
 });
 $('#endDateTwo').datepicker({
