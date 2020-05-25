@@ -1,6 +1,6 @@
 ﻿var imageOne = document.getElementById("graphOne");
 
-function changeGraphOne()
+function ChangeGraphOne()
 {
     if (imageOne.getAttribute('src') == "/img/PrimaryGraphOne.png")
     {
