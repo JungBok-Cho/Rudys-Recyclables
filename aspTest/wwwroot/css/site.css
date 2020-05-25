@@ -19,6 +19,25 @@ for details on configuring this project to bundle and minify static web assets. 
     background: #fbfafd;
 }
 
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.centerButton {
+    margin: 0;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
 .card-columns .card-img {
     height: 330px;
     vertical-align: bottom;
