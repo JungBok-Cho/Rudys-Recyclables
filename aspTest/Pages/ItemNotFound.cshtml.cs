@@ -7,8 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace RudysRecyclables.Pages
 {
+    /// <summary>
+    /// The Item Not Found Page
+    /// </summary>
     public class ItemNotFoundModel : PageModel
     {
+        /// <summary>
+        /// Get for the Item Not Found Page
+        /// </summary>
         public void OnGet()
         {
 
