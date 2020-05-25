@@ -4,63 +4,28 @@
     ViewData["Title"] = "Wishlist";
 }
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="~/css/WishListFile.css">
-<link rel="stylesheet" type="text/javascript" href="~/js/WishListJS.js">
 <h1>Wishlist</h1>
 
-<div class="page-content page-container" id="page-content">
-    
-    <div class="padding">
-    
-        <div class="row container d-flex justify-content-center">
-        
-            <div class="col-lg-12">
-            
-                <div class="card px-3">
-                
-                    <div class="card-body">
-                        <h3 class="card-title">Wish list</h3>
-                    
-                        <div class="add-items d-flex"> 
-                            <input type="text" class="form-control todo-list-input" placeholder="What do you want today?"> <button class="add btn btn-primary font-weight-bold todo-list-add-btn">Add</button> 
-                        </div>
-                        
-                        <div class="list-wrapper">
-                            <ul class="d-flex flex-column-reverse todo-list">
-                                <li>
-                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Desk <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
-                                </li>
-                                <li class="completed">
-                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox" checked=""> Table <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
-                                </li>
-                                <li>
-                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Graduation <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
-                                </li>
-                                <li>
-                                    <div class="form-check"> <label class="form-check-label"> <input class="checkbox" type="checkbox"> Job <i class="input-helper"></i></label> </div> <i class="remove mdi mdi-close-circle-outline"></i>
-                                </li>
-                                <li class="completed">
-                                    <div class="form-check"> 
-                                        <label class="form-check-label"> <input class="checkbox" type="checkbox" checked=""> Tent <i class="input-helper"></i></label> 
-                                    </div> <i class="remove mdi mdi-close-circle-outline"></i>
-                                </li>
-                                <li>
-                                    <div class="form-check"> 
-                                        <label class="form-check-label"> <input class="checkbox" type="checkbox"> Retirement <i class="input-helper"></i></label> 
-                                    </div> <i class="remove mdi mdi-close-circle-outline"></i>
-                                </li>
-                            </ul>
-                        </div>
-                    
-                    </div>
-                
-                </div>
-           
-            </div>
-        
-        </div>
-    
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../CSS/WishListFile.css">
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h2 style="margin:5px">Wish List</h2>
+        <input type="text" id="myInput" placeholder="Title...">
+        <span onclick="newElement()" class="addBtn">Add</span>
     </div>
 
-</div>
+    <ul id="myUL">
+        <li>Desk</li>
+        <li class="checked">Table</li>
+        <li>Graduation</li>
+        <li>Job</li>
+        <li>Chair</li>
+    </ul>
+    <script rel="stylesheet" type="text/javascript" src="~/js/WishListJS.js"></script>
+</body>
+</html>
