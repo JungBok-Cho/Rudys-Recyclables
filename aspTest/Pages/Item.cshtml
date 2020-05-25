@@ -23,7 +23,7 @@
         consectetur adipiscing elit. Maecenas est justo, auctor sed lectus nec, ullamcorper tempus libero. Nullam condimentum tortor vel vestibulum sagittis. Nunc ut semper tortor. 
         Aenean condimentum dapibus eros non consectetur. Ut a eros hendrerit leo efficitur ultricies. Duis viverra maximus quam efficitur fringilla.<br><br></p>
         <form>
-            <button type="button" class="btn btn-primary" onclick="contacted()" id="ContactButton">Contact</button>
+            <button type="button" class="btn btn-primary" onclick="contacted()" id="ContactButton" value="Contact"></button>
         </form>
     </div>
 
@@ -32,7 +32,10 @@
 <script>
     function contacted()
     {
+        var button = document.getElementById("ContactButton");
         window.alert("Poster has been contacted!");
+        button.disabled = true;
+        button.value = "Pending";
     }
 </script>  
 
