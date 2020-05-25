@@ -7,8 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace RudysRecyclables.Pages
 {
+    /// <summary>
+    /// The Editing Page
+    /// </summary>
     public class EditingModel : PageModel
     {
+        /// <summary>
+        /// Get for the Editing Page
+        /// </summary>
         public void OnGet()
         {
 
