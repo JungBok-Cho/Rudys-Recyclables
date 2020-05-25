@@ -7,8 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace RudysRecyclables.Pages
 {
+    /// <summary>
+    /// The Admin Home Page
+    /// </summary>
     public class AdminHomeModel : PageModel
     {
+        /// <summary>
+        /// Get for the Admin Home Page
+        /// </summary>
         public void OnGet()
         {
 
