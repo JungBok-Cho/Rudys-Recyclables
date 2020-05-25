@@ -1,36 +1,55 @@
-﻿(function ($) {
-    'use strict';
-    $(function () {
-        var todoListItem = $('.todo-list');
-        var todoListInput = $('.todo-list-input');
-        $('.todo-list-add-btn').on("click", function (event) {
-            event.preventDefault();
+﻿// Create a "close" button and append it to each list item
+var myNodelist = document.getElementsByTagName("LI");
+var i;
+for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+}
 
-            var item = $(this).prevAll('.todo-list-input').val();
+// Click on a close button to hide the current list item
+var close = document.getElementsByClassName("close");
+var i;
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function () {
+        var div = this.parentElement;
+        div.style.display = "none";
+    }
+}
 
-            if (item) {
-                todoListItem.append("<li>
-                    < div class= 'form-check' > <label class='form-check-label'><input class='checkbox' type='checkbox' />" + item + "<i class='input-helper'></i></label></div > <i class='remove mdi mdi-close-circle-outline'></i>
-</li > ");
-todoListInput.val("");
-            }
+// Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function (ev) {
+    if (ev.target.tagName === 'LI') {
+        ev.target.classList.toggle('checked');
+    }
+}, false);
 
-        });
+// Create a new list item when clicking on the "Add" button
+function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+        alert("You must write something!");
+    } else {
+        document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
 
-        todoListItem.on('change', '.checkbox', function () {
-            if ($(this).attr('checked')) {
-                $(this).removeAttr('checked');
-            } else {
-                $(this).attr('checked', 'checked');
-            }
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
 
-            $(this).closest("li").toggleClass('completed');
-
-        });
-
-        todoListItem.on('click', '.remove', function () {
-            $(this).parent().remove();
-        });
-
-    });
-})(jQuery);
+    for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+}
