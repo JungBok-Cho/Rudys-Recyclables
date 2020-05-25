@@ -134,7 +134,15 @@
 
         <div class="row">
 
+            <div class="col text-center">
+                Start Date:
+                <input id="startDate" value="@DateTime.Today.AddDays(-14).ToShortDateString()" />
+            </div>
 
+            <div class="col text-center">
+                End Date:
+                <input id="endDate" value="@DateTime.Today.ToShortDateString()" />
+            </div>
 
         </div>
 
