@@ -1,0 +1,9 @@
+﻿.largeImage {
+    position: absolute;
+    left: -9999px;
+}
+
+#hover:hover .largeImage {
+    left: 20px;
+    top: -320%;
+}
