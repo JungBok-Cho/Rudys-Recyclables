@@ -8,9 +8,9 @@
 
 <div class="text-center">
     <h1 class="display-4">Grey and The Gang</h1>
-    
-</div><br>
+</div>
 
+<br>
 
 <div class="container h-100 d-flex justify-content-center">
     <form class="form-inline my-2 my-lg-0">
@@ -27,7 +27,9 @@
             }
         </script>
     </form>
+
     &emsp;
+
     <form class="form-inline my-2 my-lg-0">
         <select class="form-control">
             <option value="" selected>Sort by</option>
@@ -36,43 +38,59 @@
             <option value="three">Most View</option>
         </select>
     </form>
+
     &emsp;
+
     <form class="form-inline my-2 my-lg-0">
         <button type="submit" class="btn btn-primary" asp-area="" asp-page="/Posting">Post</button>
     </form>
+
 </div>
+
 <br>
 
 @*<img src="~/img/Home.jpg" /> *@
 
 <br>
+
 <div class="card-columns">
+
     <div class="card">
+
         <div class="card-img">
             <img src="~/img/MainLamp.png" class="card-img">
         </div>
+
         <div class="card-body">
             <a class="card-title" asp-area="" asp-page="/Item">Lamp</a>
         </div>
+
     </div>
 
     <div class="card">
+
         <div class="card-img">
             <img src="~/img/Plants.jpg" class="card-img">
         </div>
+
         <div class="card-body">
             <a class="card-title" asp-area="" asp-page="/Item">Plants</a>
         </div>
+
     </div>
 
     @foreach (var product in Model.Products)
     {
         <div class="card">
+
             <div class="card-img" style="background-image: url('@product.Image');"></div>
+            
             <div class="card-body">
                 @* <h5 class="card-title">@product.Title</h5>*@
                 <a class="card-title" asp-area="" asp-page="/Item">@product.Title</a>
             </div>
+
         </div>
     }
+
 </div>
