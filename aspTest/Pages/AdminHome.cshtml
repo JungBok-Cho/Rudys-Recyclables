@@ -167,4 +167,19 @@
         },
         maxDate: today
     });
+    $('#startDateTwo').datepicker({
+        uiLibrary: 'bootstrap4',
+        iconsLibrary: 'fontawesome',
+        dateFormat: 'mm-dd-yyyy',
+        minDate: "@DateTime.Today.AddDays(-14).ToShortDateString()",
+        maxDate: today,
+    });
+    $('#endDateTwo').datepicker({
+        uiLibrary: 'bootstrap4',
+        iconsLibrary: 'fontawesome',
+        minDate: function () {
+            return $('#startDate').val();
+        },
+        maxDate: today
+    });
 </script>
