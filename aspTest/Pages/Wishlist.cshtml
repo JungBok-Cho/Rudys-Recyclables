@@ -4,28 +4,20 @@
     ViewData["Title"] = "Wishlist";
 }
 
+
 </br></br>
+<div id="myDIV" class="header">
+    <h2 style="margin:0px">Wish List</h2></br>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span onclick="newElement()" class="addBtn">Add</span>
+</div>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../CSS/WishListFile.css">
-</head>
-<body>
-    <div id="myDIV" class="header">
-        <h2 style="margin:0px">Wish List</h2></br>
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
-    </div>
+<ul id="myUL">
+    <li>Desk</li>
+    <li class="checked">Table</li>
+    <li>Graduation</li>
+    <li>Job</li>
+    <li>Chair</li>
+</ul>
+<script rel="stylesheet" type="text/javascript" src="~/js/WishListJS.js"></script>
 
-    <ul id="myUL">
-        <li>Desk</li>
-        <li class="checked">Table</li>
-        <li>Graduation</li>
-        <li>Job</li>
-        <li>Chair</li>
-    </ul>
-    <script rel="stylesheet" type="text/javascript" src="~/js/WishListJS.js"></script>
-</body>
-</html>
