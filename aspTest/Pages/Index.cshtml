@@ -17,18 +17,6 @@
     <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="searchtxt">
         <button type="button" class="btn btn-primary" onclick="myFunc()" asp-area="">Search</button>
-        <script>
-            function myFunc() {
-                let val = searchtxt.value;
-                if (val === "lamp") {
-                    window.location.href = 'AfterSearch';
-                } else if (val === "") {
-                    window.location.href = 'Index';
-                } else {
-                    window.location.href = 'ItemNotFound';
-                }
-            }
-        </script>
     </form>
 
     &emsp;
