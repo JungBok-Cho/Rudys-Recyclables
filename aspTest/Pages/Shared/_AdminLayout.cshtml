@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="~/css/site.css" />
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <header>
@@ -33,7 +37,6 @@
                         <script>
                             function contacted() {
                                 var dropdownItem = document.getElementById("logout");
-                                window.alert("You successfully logged out!");
                                 window.location.replace("https://www.seattleu.edu/");
                             }
                         </script>
@@ -47,6 +50,8 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <script src="~/js/site.js"></script>
+            @RenderSection("scripts", required: false)
         </main>
     </div>
 
@@ -61,5 +66,6 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
+
 </body>
 </html>
