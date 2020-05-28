@@ -66,7 +66,6 @@ function searchBar() {
 
 function contacted() {
     var button = document.getElementById("ContactButton");
-    window.alert("Poster has been contacted!");
     button.disabled = true;
     button.value = "Pending";
 };
