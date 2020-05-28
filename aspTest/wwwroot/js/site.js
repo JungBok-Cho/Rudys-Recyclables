@@ -53,18 +53,26 @@ $('#endDateTwo').datepicker({
     maxDate: today
 });
 
-function searchBar() {
+function searchBar()
+{
     let val = searchtxt.value;
-    if (val === "lamp") {
+
+    if (val === "lamp")
+    {
         window.location.href = 'AfterSearch';
-    } else if (val === "") {
+    }
+    else if (val === "")
+    {
         window.location.href = 'Index';
-    } else {
+    }
+    else
+    {
         window.location.href = 'ItemNotFound';
     }
 };
 
-function contacted() {
+function contacted()
+{
     var button = document.getElementById("ContactButton");
     button.disabled = true;
     button.value = "Pending";
