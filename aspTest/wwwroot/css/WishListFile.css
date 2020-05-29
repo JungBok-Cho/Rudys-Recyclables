@@ -1,14 +1,14 @@
-body 
+/*body 
 {
     margin: 0;
     min-width: 250px;
-}
+}*/
 
 /* Include the padding and border in an element's total width and height */
-* 
+/** 
 {
     box-sizing: border-box;
-}
+}*/
 
 /* Remove margins and padding from the list */
 ul 
@@ -102,7 +102,7 @@ ul li.checked::before
 }
 
 /* Style the input */
-input 
+#myInput 
 {
     margin: 0;
     border: none;
