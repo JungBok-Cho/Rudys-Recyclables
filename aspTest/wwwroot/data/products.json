@@ -2,9 +2,9 @@
   {
     "Id": "jenlooper-cactus",
     "Maker": "@jenlooper",
-    "img": "img/Chair.jpg",
+    "img": "img/DeskLamp.png",
     "Url": "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
-    "Title": "Beautiful Handmade Chair",
+    "Title": "Desk Lamp",
     "Description": "This project is a good learning project to get comfortable with soldering and programming an Arduino.",
     "Ratings": [
       5,
@@ -113,9 +113,9 @@
   {
     "Id": "vogueandcode-ruby-sis-2",
     "Maker": "vogueandcode",
-    "img": "img/LeatherChair.jpg",
+    "img": "img/FloorLamp.jpg",
     "Url": "https://www.vogueandcode.com/shop/ruby-sis-2",
-    "Title": "Leather Office Chair",
+    "Title": "Floor Lamp",
     "Description": "Styled in a dashiki, Ruby Sis is listening to music while coding in her favorite language, Ruby!",
     "Ratings": null
   },
