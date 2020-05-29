@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,43 +11,45 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="~/css/WishListFile.css">
 </head>
+
 <body>
+
     <header>
+
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-navbar border-bottom box-shadow mb-3">
+
             <div class="container">
+
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Rudy's Recyclables</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!--Dropdown primary-->
                 <div class="dropdown">
-                    <!--Trigger-->
+
                     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                         User Account
                     </button>
-                    <!--Menu-->
+
                     <div class="dropdown-menu dropdown-primary">
                         <a class="dropdown-item" href="#">Profile</a>
                         <a class="dropdown-item" asp-area="" asp-page="/ViewMyItems">View My Items</a>
                         <a class="dropdown-item" asp-area="" asp-page="/Wishlist">Wish List</a>
                         <a class="dropdown-item" asp-area="" asp-page="/AdminHome">Admin Page</a>
-                        <a class="dropdown-item" href="#" id='logout' onclick="contacted()">Logout</a>
-                        <script>
-                            function contacted() {
-                                var dropdownItem = document.getElementById("logout");
-                                window.location.replace("https://www.seattleu.edu/");
-                            }
-                        </script>
+                        <a class="dropdown-item" href="https://www.seattleu.edu/">Logout</a>
                     </div>
+
                 </div>
-                <!--/Dropdown primary-->
 
             </div>
+
         </nav>
+
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -64,5 +67,7 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)
+
 </body>
+
 </html>
