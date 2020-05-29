@@ -1,5 +1,7 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,40 +15,42 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
+
     <header>
+
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-navbar border-bottom box-shadow mb-3">
+
             <div class="container">
+
                 <a class="navbar-brand" asp-area="" asp-page="/AdminHome">Rudy's Recyclables</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!--Dropdown primary-->
                 <div class="dropdown">
-                    <!--Trigger-->
+
                     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                         User Account
                     </button>
-                    <!--Menu-->
+
                     <div class="dropdown-menu dropdown-primary">
                         <a class="dropdown-item" asp-area="" asp-page="/Index">Home Page</a>
-                        <a class="dropdown-item" href="#" id='logout' onclick="contacted()">Logout</a>
-                        <script>
-                            function contacted() {
-                                var dropdownItem = document.getElementById("logout");
-                                window.location.replace("https://www.seattleu.edu/");
-                            }
-                        </script>
+                        <a class="dropdown-item" href="https://www.seattleu.edu/">Logout</a>
                     </div>
+
                 </div>
-                <!--/Dropdown primary-->
 
             </div>
+
         </nav>
+
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -68,4 +72,5 @@
     @RenderSection("Scripts", required: false)
 
 </body>
+
 </html>
