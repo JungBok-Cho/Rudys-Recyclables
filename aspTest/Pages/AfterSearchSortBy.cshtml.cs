@@ -10,7 +10,7 @@ namespace RudysRecyclables.Pages
     /// <summary>
     /// The After Search Page
     /// </summary>
-    public class AfterSearchModel : PageModel
+    public class AfterSearchSortByModel : PageModel
     {
         /// <summary>
         /// Get for the After Search Page
