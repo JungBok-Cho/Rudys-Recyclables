@@ -1,0 +1,72 @@
+﻿@page
+@model RudysRecyclables.Pages.AfterSearchModel
+@{
+    ViewData["Title"] = "AfterSearch";
+}
+
+<h1>AfterSearch</h1>
+
+<div class="container h-100 d-flex justify-content-center">
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button type="submit" class="btn btn-primary" asp-area="" asp-page="/AfterSearch">Search</button>
+    </form>
+
+    &emsp;
+
+    <form class="form-inline my-2 my-lg-0">
+        <select class="form-control">
+            <option value="" selected>Newest</option>
+            <option value="one">Oldest</option>
+            <option value="two">Most Viewed</option>
+        </select>
+    </form>
+
+    &emsp;
+
+    <form class="form-inline my-2 my-lg-0">
+        <button type="submit" class="btn btn-primary" asp-area="" asp-page="/Posting">Post</button>
+    </form>
+</div>
+
+<br>
+
+<div class="card-columns">
+
+    <div class="card">
+
+        <div class="card-img">
+            <img src="~/img/MainLamp.png" class="card-img">
+        </div>
+
+        <div class="card-body">
+            <a class="card-title" asp-area="" asp-page="/Item">Lamp</a>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="card-img">
+            <img src="~/img/DeskLamp.png" class="card-img">
+        </div>
+
+        <div class="card-body">
+            <a class="card-title" asp-area="" asp-page="">Desk Lamp</a>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+        <div class="card-img">
+            <img src="~/img/FloorLamp.jpg" class="card-img">
+        </div>
+
+        <div class="card-body">
+            <a class="card-title" asp-area="" asp-page="">Floor Lamp</a>
+        </div>
+
+    </div>
+
+</div>
