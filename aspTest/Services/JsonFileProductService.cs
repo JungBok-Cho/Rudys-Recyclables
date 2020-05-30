@@ -7,20 +7,35 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace aspTest.Services
 {
+    /// <summary>
+    /// The JsonFileProductService class
+    /// </summary>
     public class JsonFileProductService
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="webHostEnvironment"></param>
         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
         {
             WebHostEnvironment = webHostEnvironment;
         }
 
+        // The Web Host Environment
         public IWebHostEnvironment WebHostEnvironment { get; }
 
+        /// <summary>
+        /// Getter for the Json File Name
+        /// </summary>
         private string JsonFileName
         {
             get { return Path.Combine(WebHostEnvironment.WebRootPath, "data", "products.json"); }
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns>IEnumerable<Product></returns>
         public IEnumerable<Product> GetProducts()
         {
             using (var jsonFileReader = File.OpenText(JsonFileName))
