@@ -26,7 +26,7 @@ namespace aspTest
         /// Create a Generic Host
         /// </summary>
         /// <param name="args"></param>
-        /// <returns></returns>
+        /// <returns>IHostBuilder</returns>
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
