@@ -33,7 +33,7 @@ namespace aspTest.Services
         }
 
         /// <summary>
-        /// 
+        /// Getter for the Products
         /// </summary>
         /// <returns>IEnumerable<Product></returns>
         public IEnumerable<Product> GetProducts()
@@ -48,6 +48,11 @@ namespace aspTest.Services
             }
         }
 
+        /// <summary>
+        /// Add rating to the products
+        /// </summary>
+        /// <param name="productId"></param>
+        /// <param name="rating"></param>
         public void AddRating(string productId, int rating)
         {
             var products = GetProducts();
