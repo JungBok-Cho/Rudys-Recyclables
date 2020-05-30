@@ -8,12 +8,12 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 namespace RudysRecyclables.Pages
 {
     /// <summary>
-    /// The After Search Page
+    /// The After Search Sort By MS Page
     /// </summary>
     public class AfterSearchSortByMSModel : PageModel
     {
         /// <summary>
-        /// Get for the After Search Page
+        /// Get for the After Search Sort By MS Page
         /// </summary>
         public void OnGet()
         {
