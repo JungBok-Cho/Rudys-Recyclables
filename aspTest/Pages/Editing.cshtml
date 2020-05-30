@@ -4,7 +4,7 @@
     ViewData["Title"] = "Editing";
 }
 
-<br />
+<br/>
 
 <div class="card w-50 center">
 
@@ -12,8 +12,11 @@
         <h3>&ensp;Edit your posting</h3><br />
 
         <div class="container">
+
             <form class="form-inline my-lg-0">
+
                 <input class="border mr-sm-3" type="text" aria-label="Title" value="Leather Office Chair">
+
                 <select class="form-control-sm mr-sm-3 border">
                     <option value="" disabled>Quality</option>
                     <option value="one" selected>Excellent</option>
@@ -22,28 +25,38 @@
                     <option value="four">Ok</option>
                     <option value="five">Poor</option>
                 </select>
+
                 <input class="ml-auto ml-1" type="checkbox"> 
+
                 &ensp;
+
                 <label>Claimed?</label>
+
             </form>
+
         </div>
 
-        <br />
+        <br/>
 
         <div class="container">
             <textarea class="form-control" rows="7" id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas efficitur tellus ac imperdiet. Donec nibh elit, dapibus a posuere nec, efficitur vel erat. Pellentesque molestie ut elit sit amet pellentesque. Suspendisse in nisi quis libero imperdiet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas est justo, auctor sed lectus nec, ullamcorper tempus libero. Nullam condimentum tortor vel vestibulum sagittis. Nunc ut semper tortor. Aenean condimentum dapibus eros non consectetur. Ut a eros hendrerit leo efficitur ultricies. Duis viverra maximus quam efficitur fringilla.</textarea>
         </div>
 
-        <br />
+        <br/>
 
         <div class="container">
+
             <form class="form-inline my-2 my-lg-0">
+
                 <label class="btn btn-primary" for="my-file-selector">
                     <input id="my-file-selector" type="file" class="d-none">
                     Add pictures
                 </label>
+
                 <button type="submit" class="btn btn-primary ml-auto ml-1" asp-area="" asp-page="/HomePageWithChairWithImg">Update</button>
+
             </form>
+
         </div>
 
     </div>
