@@ -1,6 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
+﻿// Functionality to change the displayed image in the first graph spot
 var imageOne = document.getElementById("graphOne");
 
 function ChangeGraphOne()
@@ -15,6 +13,7 @@ function ChangeGraphOne()
     }
 }
 
+// jQuery to control date selector on Admin page
 var today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
 
 $('#startDate').datepicker({
@@ -51,6 +50,7 @@ $('#endDateTwo').datepicker({
     maxDate: today
 });
 
+// Controls functionality around the search bar
 function searchBar()
 {
     let val = searchtxt.value;
@@ -69,6 +69,7 @@ function searchBar()
     }
 };
 
+// Changes contact button to Pending and unclickable
 function contacted()
 {
     var button = document.getElementById("ContactButton");
@@ -77,7 +78,8 @@ function contacted()
 };
 
 // Create a new list item when clicking on the "Add" button
-function newElement() {
+function newElement()
+{
     var li = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
     var t = document.createTextNode(inputValue);
@@ -85,10 +87,12 @@ function newElement() {
 
     li.appendChild(t);
 
-    if (inputValue === '') {
+    if (inputValue === '')
+    {
         alert("You must write something!");
     }
-    else {
+    else
+    {
         document.getElementById("myUL").appendChild(li);
     }
 
@@ -101,8 +105,10 @@ function newElement() {
     span.appendChild(txt);
     li.appendChild(span);
 
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
+    for (i = 0; i < close.length; i++)
+    {
+        close[i].onclick = function ()
+        {
             var div = this.parentElement;
             div.style.display = "none";
         }
