@@ -1,35 +1,47 @@
-﻿.largeImage {
+﻿/* CSS to control images on Item page */
+.largeImage 
+{
     position: absolute;
     left: -9999px;
 }
 
-#hover:hover .largeImage {
+/* CSS to control hovering thumbnails on Item page */
+#hover:hover .largeImage 
+{
     left: 20px;
     top: -320%;
 }
 
-.checked {
+/* CSS for general site layout */
+.checked 
+{
     color: orange;
 }
 
-.fa-star {
+/* CSS to control images on Item page */
+.fa-star 
+{
     cursor: pointer;
 }
 
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-.card-columns .card:hover .card-img {
+/* CSS to control images on Item page */
+.card-columns .card:hover .card-img 
+{
     opacity: 1;
     -webkit-transform-style: preserve-3d;
 }
 
-.card-columns .card-body {
+/* CSS to control images on Item page */
+.card-columns .card-body 
+{
     height: 100px;
     font-family: 'Nunito', sans-serif;
     background: #fbfafd;
 }
 
-.center {
+/* CSS to control images on Item page */
+.center 
+{
     margin: 0;
     position: absolute;
     top: 50%;
@@ -38,7 +50,9 @@ for details on configuring this project to bundle and minify static web assets. 
     transform: translate(-50%, -50%);
 }
 
-.centerButton {
+/* CSS to control images on Item page */
+.centerButton 
+{
     margin: 0;
     position: absolute;
     top: 57%;
@@ -47,8 +61,9 @@ for details on configuring this project to bundle and minify static web assets. 
     transform: translate(-50%, -50%);
 }
 
-
-.card-columns .card-img {
+/* CSS to control images on Item page */
+.card-columns .card-img 
+{
     height: 330px;
     vertical-align: bottom;
     background-position: center; /* Center the image */
@@ -57,7 +72,9 @@ for details on configuring this project to bundle and minify static web assets. 
     opacity: .8;
 }
 
-.modal .card-img {
+/* CSS to control images on Item page */
+.modal .card-img
+{
     height: 500px;
     vertical-align: bottom;
     background-position: center; /* Center the image */
@@ -65,17 +82,22 @@ for details on configuring this project to bundle and minify static web assets. 
     background-size: cover; /* Resize the background image to cover the entire container */
 }
 
-.card-columns .card:hover {
+/* CSS to control images on Item page */
+.card-columns .card:hover 
+{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(37,33,82,.12), 0 4px 8px rgba(37,33,82,.06);
 }
 
-.card-footer {
+/* CSS to control images on Item page */
+.card-footer 
+{
     background: #fbfafd;
 }
 
-
-a.navbar-brand {
+/* CSS to control images on Item page */
+a.navbar-brand 
+{
     white-space: normal;
     font-family: 'Yellowtail', cursive;
     font-size: xx-large;
@@ -88,19 +110,25 @@ a {
     color: #0366d6;
 }
 
-.btn-primary {
+/* CSS to control images on Item page */
+.btn-primary 
+{
     color: #fff;
     background-color: #252152;
     border-color: #252152;
 }
 
-.btn-primary:hover {
+/* CSS to control images on Item page */
+.btn-primary:hover 
+{
     color: #fff;
     background-color: #e9a8a6;
     border-color: #e9a8a6;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+/* CSS to control images on Item page */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link 
+{
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
@@ -108,58 +136,71 @@ a {
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
+html 
+{
     font-size: 14px;
 }
 
-@media (min-width: 768px) {
-    html {
+@media (min-width: 768px) 
+{
+    html 
+    {
         font-size: 16px;
     }
 }
 
-.border-top {
+.border-top 
+{
     border-top: 1px solid #e5e5e5;
 }
 
-.border-bottom {
+.border-bottom 
+{
     border-bottom: 1px solid #e5e5e5;
 }
 
-.box-shadow {
+.box-shadow 
+{
     box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-button.accept-policy {
+button.accept-policy 
+{
     font-size: 1rem;
     line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
+html 
+{
     position: relative;
     min-height: 100%;
 }
 
-body {
+body 
+{
     /* Margin bottom by footer height */
     margin-bottom: 60px;
 }
 
-p {
+p 
+{
     font-family: 'Nunito', sans-serif;
 }
 
-h1 {
+h1 
+{
     font-family: 'Nunito', sans-serif;
 }
 
-ul {
+ul 
+{
     font-family: 'Nunito', sans-serif;
 }
 
-.footer {
+.footer 
+{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -168,28 +209,33 @@ ul {
     font-family: 'Nunito', sans-serif;
 }
 /*Backgrounds*/
-.bg-navbar {
+.bg-navbar 
+{
     background: -webkit-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: -o-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: -moz-linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
     background: linear-gradient(110deg, #e9a8a6 60%, #252152 60%);
 }
 
-.bg-footer {
+.bg-footer 
+{
     background: -webkit-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: -o-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: -moz-linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
     background: linear-gradient(110deg, #252152 60%, #e9a8a6 60%);
 }
 
+/* Wishlist styling */
 /* Remove margins and padding from the list */
-#myUL {
+#myUL 
+{
     margin: 0;
     padding: 0;
 }
 
 /* Style the list items */
-.myItem {
+.myItem 
+{
     cursor: pointer;
     position: relative;
     padding: 12px 8px 12px 40px;
@@ -200,30 +246,36 @@ ul {
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
-.myUL .myItem:nth-child(odd) {
+.myUL .myItem:nth-child(odd) 
+{
     background: #f9f9f9;
 }
 
 /* Darker background-color on hover */
-.myItem:hover {
+.myItem:hover 
+{
     background: #ddd;
 }
 
 /* Style the close button */
-.close {
+.close 
+{
     position: absolute;
     right: 0;
     top: 0;
     padding: 12px 16px 12px 16px;
 }
 
-    .close:hover {
-        background-color: #f44336;
-        color: white;
-    }
+/* Hover over the close button functionality */
+.close:hover 
+{
+    background-color: #f44336;
+    color: white;
+}
 
 /* Style the header */
-#myDIV {
+#myDIV 
+{
     background-color: #778899;
     padding: 30px 40px;
     color: black;
@@ -231,7 +283,8 @@ ul {
 }
 
 /* Style the input */
-#myInput {
+#myInput 
+{
     margin: 0;
     border: none;
     border-radius: 0;
@@ -242,7 +295,8 @@ ul {
 }
 
 /* Style the "Add" button */
-.addBtn {
+.addBtn 
+{
     padding: 10px;
     width: 25%;
     background: #d9d9d9;
@@ -255,7 +309,9 @@ ul {
     border-radius: 0;
 }
 
-    .addBtn:hover {
-        background-color: #bbb;
-    }
+/* Color for hovering over the add button */
+.addBtn:hover 
+{
+    background-color: #bbb;
+}
 
